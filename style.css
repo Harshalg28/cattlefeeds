@@ -1,0 +1,153 @@
+/* Basic reset for cross-browser compatibility */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Styling for body and background */
+body {
+   font-family: Arial, sans-serif;
+   background-color: #4d512467;
+   background-position: 0 0, 25px 25px;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Login box styling */
+.login-box {
+   background-color: rgb(255, 245, 245);
+   padding: 40px;
+   width: 350px;
+   border-radius: 10px;
+   box-shadow: 0 15px 25px rgba(234, 34, 34, 0.968);
+   position: relative;
+}
+
+h2 {
+   text-align: center;
+   margin-bottom: 30px;
+   font-size: 28px;
+   color: #ec0505;
+   cursor: default;
+}
+
+/* Input box styling */
+.input-box {
+   position: relative;
+   margin-bottom: 30px;
+}
+
+.input-box input {
+   width: 100%;
+   padding: 10px 0;
+   font-size: 16px;
+   color: #333;
+   margin-bottom: 30px;
+   border: none;
+   border-bottom: 1px solid #999;
+   outline: none;
+   background: transparent;
+}
+
+.input-box label {
+   position: absolute;
+   top: 10px;
+   left: 0;
+   padding: 10px 0;
+   font-size: 16px;
+   color: #ff2121;
+   pointer-events: none;
+   transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+   top: -20px;
+   left: 0;
+   color:orange;
+   font-size: 12px;
+}
+
+/* Button styling */
+.button-box button {
+   width: 100%;
+   background: #ff0000ed;
+   border: none;
+   padding: 12px;
+   color: white;
+   font-size: 18px;
+   cursor: pointer;
+   transition: 0.3s;
+   border-radius: 5px;
+}
+
+.button-box button:hover {
+   background: #6dd5ed;
+}
+
+/* Error message styling */
+#error-message {
+   color: red;
+   text-align: center;
+   font-size: 14px;
+   margin-top: 10px;
+}
+
+/* Styles for the cart container cart.html */
+/* Cart button */
+#cart-button {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #007bff;
+   color: white;
+   border-radius: 5px;
+   text-decoration: none;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+#cart-button:hover {
+   background-color: #0056b3;
+}
+
+/* Cart display area */
+#cart-display {
+   margin-top: 15px;
+   padding: 15px;
+   background-color: #fff;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   max-height:500px;
+   overflow-y: auto;
+}
+
+.cart-item {
+   padding: 10px 0;
+   border-bottom: 1px solid #eee;
+}
+
+.cart-item p {
+   margin: 0;
+   font-size: 16px;
+   color: #333;
+   cursor:default;
+}
+
+#checkout-button {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   background-color: #28a745;
+   color: rgb(249, 249, 249);
+   border: none;
+   border-radius: 5px;
+   cursor:pointer;
+   margin-top: 10px;
+}
+
+#checkout-button:hover {
+   background-color: #218838;
+}
